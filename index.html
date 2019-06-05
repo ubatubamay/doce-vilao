@@ -1,0 +1,39 @@
+<!Doctype HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>QUIZ</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+	<div id="heading"><h1 id="text">DOCE VILÃO<h1></div>
+	<div id="cadastro">
+		<input id="inputNome" name="nome" type="text" placeholder="DIGITE SEU NOME AQUI">
+		<button id="jogar" onclick="jogar();">JOGAR</button>
+	</div>
+	<div id="quiz">
+		<div id="question"></div>
+		<div id="opcoes">
+		</div>
+		<button id="responder" onclick="responder();">RESPONDER</button>
+		<button id="next" onclick="nextques();">PRÓXIMA PERGUNTA</button>
+	</div>
+	<div id="result" style="display:none">
+		<span id="pontuacaoFinal"></span>
+		<button id="novoJogo" onclick="novoJogo()">INICIAR NOVO JOGO</button>
+		<button id="placarButton" onclick="verPlacar()">VER PLACAR</button>
+	</div>
+	<div id="placar" style="display:none">
+			<button onclick="novoJogo()">INICIAR NOVO JOGO</button>
+	</div>
+	<button id="quit" onclick="verPlacar();">ABANDONAR JOGO</button>
+
+	<script type="text/javascript" src="questions.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>
